@@ -14,7 +14,6 @@ namespace E404.Core
 
         public void PlayAudioClip(AudioClip audioClip)
         {
-            Debug.Log("Playing sound");
             AudioSource.PlayClipAtPoint(audioClip, transform.position);
         }
 

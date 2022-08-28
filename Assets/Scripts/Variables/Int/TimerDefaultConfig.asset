@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: TimerDefaultConfig
   m_EditorClassIdentifier: 
   DeveloperDescription: Default value for the timer
-  Value: 10
+  Value: 120
