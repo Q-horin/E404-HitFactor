@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8925914025323342156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8925914025323342194}
+  - component: {fileID: 8925914025323342195}
+  - component: {fileID: 133212168}
+  - component: {fileID: 133212169}
+  - component: {fileID: 133212170}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8925914025323342194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925914025323342156}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8925914025323342195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925914025323342156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d11ac69175381b44fbd1e39cc5e9136e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Points: {fileID: 11400000, guid: 5552e509a5c32e54babdc7bcd7869a64, type: 2}
+  PointsToWin: {fileID: 11400000, guid: 09a4f3a6823f84d43836f2316fa87de0, type: 2}
+  InGame: {fileID: 11400000, guid: 5ddfd209ea53a854a80ddae1932108db, type: 2}
+  HasPlayerWin: {fileID: 11400000, guid: 42c9d698be593694d97a851363f6969d, type: 2}
+--- !u!114 &133212168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925914025323342156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8a88d515506984ab8edb2695aa9204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventInt: {fileID: 11400000, guid: 822b298be3e2d4f40b95c9f81295a75b, type: 2}
+  unityEventInt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8925914025323342195}
+        m_TargetAssemblyTypeName: E404.Core.ScoreManager, Assembly-CSharp
+        m_MethodName: UpdateScore
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &133212169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925914025323342156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8a88d515506984ab8edb2695aa9204, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventInt: {fileID: 11400000, guid: e2cd40bcc7698224b94d57042d4aa3c5, type: 2}
+  unityEventInt:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8925914025323342195}
+        m_TargetAssemblyTypeName: E404.Core.ScoreManager, Assembly-CSharp
+        m_MethodName: UpdateScore
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &133212170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8925914025323342156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: cb4e9a8fff7997844be30d3fb9718984, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8925914025323342195}
+        m_TargetAssemblyTypeName: E404.Core.ScoreManager, Assembly-CSharp
+        m_MethodName: ResetConf
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

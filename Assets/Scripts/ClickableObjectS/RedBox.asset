@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faf6faa54da1cc4e86c60911709ce2a, type: 3}
+  m_Name: RedBox
+  m_EditorClassIdentifier: 
+  clickedValue: -5
+  dissapearValue: 0
+  clickEfforts: 0
+  longevity: 5
+  Points: {fileID: 11400000, guid: 5552e509a5c32e54babdc7bcd7869a64, type: 2}
+  clickableObjectPrefab: {fileID: -6783502476578573974, guid: 52e26bbec858897419071f3bb2234a55, type: 3}
+  OnPointsChanged: {fileID: 11400000, guid: 37b48dfdbb1f03149bc4cf4e96f07939, type: 2}
+  OnObjectClicked: {fileID: 11400000, guid: 822b298be3e2d4f40b95c9f81295a75b, type: 2}
+  OnObjectDissapeared: {fileID: 11400000, guid: e2cd40bcc7698224b94d57042d4aa3c5, type: 2}

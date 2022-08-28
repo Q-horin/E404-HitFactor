@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2202229607013305076
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2202229607013304843}
+  - component: {fileID: 2202229607013304842}
+  - component: {fileID: 1566210237}
+  - component: {fileID: 1566210238}
+  - component: {fileID: 2202229606228432269}
+  - component: {fileID: 2202229606228432271}
+  - component: {fileID: 2202229606228432272}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2202229607013304843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2202229607013304842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b06849f51945b04f80ca0284aac5774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickableObjectConfigList: {fileID: 11400000, guid: 7cb9b399335176842881e74c2d396491, type: 2}
+  InGame: {fileID: 11400000, guid: 5ddfd209ea53a854a80ddae1932108db, type: 2}
+  SpecialClickableObjectClicked: {fileID: 11400000, guid: 53f3ca3f76b3cc44dbc2b229f661aabe, type: 2}
+  IsSpawnManagerStarted: {fileID: 11400000, guid: 10cf5063c97379e40a3bc0b8f590f8eb, type: 2}
+  currentGameDifficulty: {fileID: 11400000, guid: e7124c3779fac714bb6c095f242042b1, type: 2}
+  OnGameDifficultySelected: {fileID: 11400000, guid: c25c67ee29b972a4db62d672776ed338, type: 2}
+  raycastMaxDistance: 10
+--- !u!114 &1566210237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26b4249736f918347a131353a6650e7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventClickableObjectConfig: {fileID: 11400000, guid: 9d2fe10f2dc3c2f44be4b85ace37f3b3, type: 2}
+  unityEventClickableObjectConfig:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229607013304842}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleSpecialClickableObjectClicked
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1566210238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37e5f5c8f1065f4e83e8491cbd29467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventGameDifficulty: {fileID: 11400000, guid: c25c67ee29b972a4db62d672776ed338, type: 2}
+  unityEventGameDifficulty:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229607013304842}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleGameDifficultySelection
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2202229606228432269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 1affdd2aed802b649822b13ea007a04e, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229607013304842}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleInGameStartUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2202229606228432271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 137708068a91358458aa19a74bca0f00, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229607013304842}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleInGameStartUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2202229606228432272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202229607013305076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 88e1ad93075ce7243896909f5855e597, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229607013304842}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleOnTimeEnded
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

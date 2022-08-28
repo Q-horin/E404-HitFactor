@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faf6faa54da1cc4e86c60911709ce2a, type: 3}
+  m_Name: Shield
+  m_EditorClassIdentifier: 
+  clickedValue: 10
+  dissapearValue: -5
+  clickEfforts: 5
+  longevity: 5
+  clickableObjectPrefab: {fileID: -6783502476578573974, guid: 9599c21137f882b49984416961e5e3be, type: 3}
+  OnObjectClicked: {fileID: 11400000, guid: 822b298be3e2d4f40b95c9f81295a75b, type: 2}
+  OnObjectDissapeared: {fileID: 11400000, guid: e2cd40bcc7698224b94d57042d4aa3c5, type: 2}

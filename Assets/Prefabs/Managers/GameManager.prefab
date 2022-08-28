@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4421262214692489966
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6193337388531782104}
+  - component: {fileID: 8033451308983150428}
+  - component: {fileID: 1431710327}
+  - component: {fileID: 1431710328}
+  - component: {fileID: 1431710329}
+  - component: {fileID: 2490847472725146588}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6193337388531782104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 146, y: 259.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8033451308983150428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa7d8d575337846b8ad5099bcb1025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasPlayerWin: {fileID: 11400000, guid: 42c9d698be593694d97a851363f6969d, type: 2}
+  InGame: {fileID: 11400000, guid: 5ddfd209ea53a854a80ddae1932108db, type: 2}
+  InMainMenu: {fileID: 11400000, guid: 326e35c7cc256a54aabc1e5c63e498e6, type: 2}
+  InEndScreen: {fileID: 11400000, guid: e2723c38d41575649af3c3b9a8a9c1d5, type: 2}
+  EndScreenMessage: {fileID: 11400000, guid: 9aa8525444fd97b4b9706a6a02b10b75, type: 2}
+  YouWinMessage: {fileID: 11400000, guid: 09811b548155a6241b2246a1f16683b6, type: 2}
+  GameOverMessage: {fileID: 11400000, guid: 2bf21ea8bfdcbac4a9c011e490bd5bab, type: 2}
+  OnTimeEnded: {fileID: 11400000, guid: 88e1ad93075ce7243896909f5855e597, type: 2}
+  OnMainMenu: {fileID: 11400000, guid: ba30d524681856f4b859e58b61290d0d, type: 2}
+  OnInGame: {fileID: 11400000, guid: cb4e9a8fff7997844be30d3fb9718984, type: 2}
+  OnEndScreen: {fileID: 11400000, guid: 040bf7b1aaa54a049b9f580b45448188, type: 2}
+  mainMenuCanvas: {fileID: 0}
+  inGameCanvas: {fileID: 0}
+  endScreenCanvas: {fileID: 0}
+--- !u!114 &1431710327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 88e1ad93075ce7243896909f5855e597, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8033451308983150428}
+        m_TargetAssemblyTypeName: E404.Core.GameManager, Assembly-CSharp
+        m_MethodName: HandleTimeEnded
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1431710328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 137708068a91358458aa19a74bca0f00, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8033451308983150428}
+        m_TargetAssemblyTypeName: E404.Core.GameStateManager, Assembly-CSharp
+        m_MethodName: HandleRestartButtonPressedEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1431710329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 81ea2ec1c5270ca4dab9ac42e9aaf149, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8033451308983150428}
+        m_TargetAssemblyTypeName: E404.Core.GameStateManager, Assembly-CSharp
+        m_MethodName: HandleBackToMainMenuButtonPressedEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2490847472725146588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4421262214692489966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 1affdd2aed802b649822b13ea007a04e, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8033451308983150428}
+        m_TargetAssemblyTypeName: E404.Core.GameStateManager, Assembly-CSharp
+        m_MethodName: HandleStartButtonPressedEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
