@@ -14,9 +14,6 @@ Sumado a esto, implemente el diseño *State Pattern* para el manejo de los disti
 ## **TO DO**
 
 - [ ] Revisar aspectos performáticos del sistema (saber el target device del producto en cuestión sería vital).
-Ejemplos: 
-Metódos para manejar variables dependientes del tiempo --> *Coroutines vs timer += Time.deltaTime*
-Método de manejo de probabilidades de spawneo de cada objeto --> *Dictionary vs Object*
 
 - [ ] Aesthetics (UIs, Tutorial, SFX, etc...)
 
