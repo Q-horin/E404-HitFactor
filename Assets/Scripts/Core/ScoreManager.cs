@@ -12,6 +12,7 @@ namespace E404.Core
         [SerializeField] IntVariable PointsToWin;
         [SerializeField] BoolVariable InGame;
         [SerializeField] BoolVariable HasPlayerWin;
+        [SerializeField] GameEventBool OnPlayerWin;
 
         public void ResetConf(bool value)
         {   
@@ -45,6 +46,7 @@ namespace E404.Core
             else if (!HasPlayerWin.Value && points.Value >= PointsToWin.Value)
             {
                 HasPlayerWin.SetValue(true);
+                OnPlayerWin.Raise(true);
             }
         }
         

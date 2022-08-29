@@ -61,7 +61,7 @@ namespace E404.Core
             //}
         }
 
-        public void HandleOnTimeEnded()
+        public void HandleEndGameConditionMet()
         {
             currentState = spawnManagerTurnedOffState;
             currentState.EnterState(this);

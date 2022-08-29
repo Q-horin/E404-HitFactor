@@ -115,10 +115,11 @@ namespace E404.Core
             }
         }
 
-        public void HandleTimeEnded(bool timeEnded)
+        public void HandleGameEndCondition(bool timeEnded)
         {
            if (currentState == GameManagerInGameState)
            {
+                Debug.Log("Transition out from In Game State");
                 currentState.HandleTransitionState(this);
            }
         }

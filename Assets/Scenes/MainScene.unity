@@ -313,6 +313,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8925914025323342195, guid: 4e48913e7b7ab8745833dabf2d774085, type: 3}
+      propertyPath: OnPlayerWin
+      value: 
+      objectReference: {fileID: 11400000, guid: 2fb9b63efc823e04d95bea046b5327fd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e48913e7b7ab8745833dabf2d774085, type: 3}
 --- !u!1 &179364347
@@ -904,6 +908,11 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6193337388531782104, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
   m_PrefabInstance: {fileID: 2490847472725146586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &374482861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2202229607013305076, guid: 82640207289b1e64c91219737ddae1af, type: 3}
+  m_PrefabInstance: {fileID: 2202229606228432267}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &545375253
 GameObject:
@@ -3851,6 +3860,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2109214101}
     m_Modifications:
+    - target: {fileID: 2202229606228432272, guid: 82640207289b1e64c91219737ddae1af, type: 3}
+      propertyPath: unityEventBool.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleEndGameConditionMet
+      objectReference: {fileID: 0}
     - target: {fileID: 2202229607013304843, guid: 82640207289b1e64c91219737ddae1af, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3906,6 +3919,45 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2202229607013304843, guid: 82640207289b1e64c91219737ddae1af, type: 3}
   m_PrefabInstance: {fileID: 2202229606228432267}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2202229606228432281 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2202229607013304842, guid: 82640207289b1e64c91219737ddae1af, type: 3}
+  m_PrefabInstance: {fileID: 2202229606228432267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374482861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b06849f51945b04f80ca0284aac5774, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2202229606228432282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374482861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 2fb9b63efc823e04d95bea046b5327fd, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2202229606228432281}
+        m_TargetAssemblyTypeName: E404.Core.SpawnManager, Assembly-CSharp
+        m_MethodName: HandleEndGameConditionMet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2490847472725146586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3913,6 +3965,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2109214101}
     m_Modifications:
+    - target: {fileID: 1431710327, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
+      propertyPath: unityEventBool.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: HandleGameEndCondition
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431710327, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
+      propertyPath: unityEventBool.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: E404.Core.GameStateManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4421262214692489966, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -3975,3 +4035,47 @@ PrefabInstance:
       objectReference: {fileID: 933705784}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
+--- !u!1 &2490847472725146587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4421262214692489966, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
+  m_PrefabInstance: {fileID: 2490847472725146586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2490847472725146588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490847472725146587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 2fb9b63efc823e04d95bea046b5327fd, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2490847472725146589}
+        m_TargetAssemblyTypeName: E404.Core.GameStateManager, Assembly-CSharp
+        m_MethodName: HandleGameEndCondition
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2490847472725146589 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8033451308983150428, guid: fc281989ac93f7d49b5a66a64f83ba40, type: 3}
+  m_PrefabInstance: {fileID: 2490847472725146586}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2490847472725146587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fa7d8d575337846b8ad5099bcb1025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

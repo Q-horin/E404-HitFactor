@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -6783502476578573974}
   - component: {fileID: 3387694163078285370}
   - component: {fileID: 8538287485989384526}
+  - component: {fileID: -5862288861157087691}
   m_Layer: 6
   m_Name: YellowBlock
   m_TagString: Untagged
@@ -94,7 +95,35 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5745099338161393632}
         m_TargetAssemblyTypeName: E404.Core.ClickableObjectStateManager, Assembly-CSharp
-        m_MethodName: HandleGameEnd
+        m_MethodName: HandleGameEndConditionMet
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-5862288861157087691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2435263592116593047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4247bd50b6ae19543ac4879298a9cab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEventBool: {fileID: 11400000, guid: 2fb9b63efc823e04d95bea046b5327fd, type: 2}
+  unityEventBool:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5745099338161393632}
+        m_TargetAssemblyTypeName: E404.Core.ClickableObjectStateManager, Assembly-CSharp
+        m_MethodName: HandleGameEndConditionMet
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -18,11 +18,11 @@ namespace E404.Core
             if (value)
             {
                 ResetTimerToInitConf();
-                StartCoroutine(TimeCounter());
+                StartCoroutine("TimeCounter");
             }
             else if (!value)
             {
-                StopCoroutine(TimeCounter());
+                StopCoroutine("TimeCounter");
             }
         }
 
@@ -37,7 +37,7 @@ namespace E404.Core
             while (!HasTimeEnded.Value)
             {
                 CountTime();
-                yield return new WaitForSeconds(1);
+                yield return new WaitForSeconds(1f);
             }
         }
         

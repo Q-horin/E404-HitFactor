@@ -35,7 +35,7 @@ namespace E404.Core
             currentState.Clicked(this);
         }   
 
-        public void HandleGameEnd(bool hasGameEnded)
+        public void HandleGameEndConditionMet(bool hasGameEnded)
         {
             if (hasGameEnded)
             {
